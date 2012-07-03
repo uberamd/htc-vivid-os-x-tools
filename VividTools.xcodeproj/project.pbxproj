@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0221BE5F150EB51F0045E6C9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0221BE5E150EB51E0045E6C9 /* WebKit.framework */; };
+		0271E0AD150E7B79002FF28F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0271E0AC150E7B79002FF28F /* Cocoa.framework */; };
+		0271E0B7150E7B79002FF28F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0B5150E7B79002FF28F /* InfoPlist.strings */; };
+		0271E0B9150E7B79002FF28F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271E0B8150E7B79002FF28F /* main.m */; };
+		0271E0BD150E7B79002FF28F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0BB150E7B79002FF28F /* Credits.rtf */; };
+		0271E0C0150E7B79002FF28F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271E0BF150E7B79002FF28F /* AppDelegate.m */; };
+		0271E0CB150E7B7A002FF28F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0271E0CA150E7B7A002FF28F /* SenTestingKit.framework */; };
+		0271E0CC150E7B7A002FF28F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0271E0AC150E7B79002FF28F /* Cocoa.framework */; };
+		0271E0D4150E7B7A002FF28F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0D2150E7B7A002FF28F /* InfoPlist.strings */; };
+		0271E0D7150E7B7A002FF28F /* VividToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271E0D6150E7B7A002FF28F /* VividToolsTests.m */; };
+		0271E0E5150E7DE2002FF28F /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271E0E4150E7DE2002FF28F /* Controller.m */; };
+		0271E11C150E813F002FF28F /* aapt in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0E8150E813F002FF28F /* aapt */; };
+		0271E11D150E813F002FF28F /* adb in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0E9150E813F002FF28F /* adb */; };
+		0271E11E150E813F002FF28F /* aidl in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0EA150E813F002FF28F /* aidl */; };
+		0271E11F150E813F002FF28F /* dexdump in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0EB150E813F002FF28F /* dexdump */; };
+		0271E120150E813F002FF28F /* dx in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0EC150E813F002FF28F /* dx */; };
+		0271E121150E813F002FF28F /* fastboot in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0ED150E813F002FF28F /* fastboot */; };
+		0271E122150E813F002FF28F /* dx.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 0271E0EF150E813F002FF28F /* dx.jar */; };
+		0271E123150E813F002FF28F /* llvm-rs-cc in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0F0150E813F002FF28F /* llvm-rs-cc */; };
+		0271E124150E813F002FF28F /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0F1150E813F002FF28F /* NOTICE.txt */; };
+		0271E125150E813F002FF28F /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0F6150E813F002FF28F /* CMakeLists.txt */; };
+		0271E126150E813F002FF28F /* LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 0271E0FB150E813F002FF28F /* LICENSE.TXT */; };
+		0271E127150E813F002FF28F /* rs_allocation.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E10F150E813F002FF28F /* rs_allocation.rsh */; };
+		0271E128150E813F002FF28F /* rs_atomic.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E110150E813F002FF28F /* rs_atomic.rsh */; };
+		0271E129150E813F002FF28F /* rs_cl.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E111150E813F002FF28F /* rs_cl.rsh */; };
+		0271E12A150E813F002FF28F /* rs_core.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E112150E813F002FF28F /* rs_core.rsh */; };
+		0271E12B150E813F002FF28F /* rs_debug.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E113150E813F002FF28F /* rs_debug.rsh */; };
+		0271E12C150E813F002FF28F /* rs_graphics.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E114150E813F002FF28F /* rs_graphics.rsh */; };
+		0271E12D150E813F002FF28F /* rs_math.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E115150E813F002FF28F /* rs_math.rsh */; };
+		0271E12E150E813F002FF28F /* rs_matrix.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E116150E813F002FF28F /* rs_matrix.rsh */; };
+		0271E12F150E813F002FF28F /* rs_object.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E117150E813F002FF28F /* rs_object.rsh */; };
+		0271E130150E813F002FF28F /* rs_quaternion.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E118150E813F002FF28F /* rs_quaternion.rsh */; };
+		0271E131150E813F002FF28F /* rs_time.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E119150E813F002FF28F /* rs_time.rsh */; };
+		0271E132150E813F002FF28F /* rs_types.rsh in Resources */ = {isa = PBXBuildFile; fileRef = 0271E11A150E813F002FF28F /* rs_types.rsh */; };
+		0271E133150E813F002FF28F /* source.properties in Resources */ = {isa = PBXBuildFile; fileRef = 0271E11B150E813F002FF28F /* source.properties */; };
+		02A65BA3150F8223000535EE /* busybox in Resources */ = {isa = PBXBuildFile; fileRef = 02A65BA2150F8223000535EE /* busybox */; };
+		02A65BA8150F822D000535EE /* su in Resources */ = {isa = PBXBuildFile; fileRef = 02A65BA5150F822D000535EE /* su */; };
+		02A65BA9150F822D000535EE /* superuser.apk in Resources */ = {isa = PBXBuildFile; fileRef = 02A65BA6150F822D000535EE /* superuser.apk */; };
+		02A65BAA150F822D000535EE /* zergRush in Resources */ = {isa = PBXBuildFile; fileRef = 02A65BA7150F822D000535EE /* zergRush */; };
+		02EEAE72150F9C6600A2AA09 /* MainMenu2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02EEAE71150F9C6600A2AA09 /* MainMenu2.xib */; };
+		02EEAE74150FBD4F00A2AA09 /* vividicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EEAE73150FBD4F00A2AA09 /* vividicon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0271E0CD150E7B7A002FF28F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0271E09F150E7B79002FF28F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0271E0A7150E7B79002FF28F;
+			remoteInfo = VividTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0221BE5E150EB51E0045E6C9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0271E0A8150E7B79002FF28F /* VividTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VividTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0271E0AC150E7B79002FF28F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0271E0AF150E7B79002FF28F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0271E0B0150E7B79002FF28F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0271E0B1150E7B79002FF28F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0271E0B4150E7B79002FF28F /* VividTools-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VividTools-Info.plist"; sourceTree = "<group>"; };
+		0271E0B6150E7B79002FF28F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0271E0B8150E7B79002FF28F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0271E0BA150E7B79002FF28F /* VividTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VividTools-Prefix.pch"; sourceTree = "<group>"; };
+		0271E0BC150E7B79002FF28F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0271E0BE150E7B79002FF28F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0271E0BF150E7B79002FF28F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0271E0C9150E7B7A002FF28F /* VividToolsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VividToolsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0271E0CA150E7B7A002FF28F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0271E0D1150E7B7A002FF28F /* VividToolsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VividToolsTests-Info.plist"; sourceTree = "<group>"; };
+		0271E0D3150E7B7A002FF28F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0271E0D5150E7B7A002FF28F /* VividToolsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VividToolsTests.h; sourceTree = "<group>"; };
+		0271E0D6150E7B7A002FF28F /* VividToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VividToolsTests.m; sourceTree = "<group>"; };
+		0271E0E3150E7DE2002FF28F /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		0271E0E4150E7DE2002FF28F /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		0271E0E8150E813F002FF28F /* aapt */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = aapt; sourceTree = "<group>"; };
+		0271E0E9150E813F002FF28F /* adb */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = adb; sourceTree = "<group>"; };
+		0271E0EA150E813F002FF28F /* aidl */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = aidl; sourceTree = "<group>"; };
+		0271E0EB150E813F002FF28F /* dexdump */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = dexdump; sourceTree = "<group>"; };
+		0271E0EC150E813F002FF28F /* dx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dx; sourceTree = "<group>"; };
+		0271E0ED150E813F002FF28F /* fastboot */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = fastboot; sourceTree = "<group>"; };
+		0271E0EF150E813F002FF28F /* dx.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = dx.jar; sourceTree = "<group>"; };
+		0271E0F0150E813F002FF28F /* llvm-rs-cc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "llvm-rs-cc"; sourceTree = "<group>"; };
+		0271E0F1150E813F002FF28F /* NOTICE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
+		0271E0F4150E813F002FF28F /* altivec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = altivec.h; sourceTree = "<group>"; };
+		0271E0F5150E813F002FF28F /* avxintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avxintrin.h; sourceTree = "<group>"; };
+		0271E0F6150E813F002FF28F /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		0271E0F7150E813F002FF28F /* emmintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emmintrin.h; sourceTree = "<group>"; };
+		0271E0F8150E813F002FF28F /* float.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = float.h; sourceTree = "<group>"; };
+		0271E0F9150E813F002FF28F /* immintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = immintrin.h; sourceTree = "<group>"; };
+		0271E0FA150E813F002FF28F /* iso646.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iso646.h; sourceTree = "<group>"; };
+		0271E0FB150E813F002FF28F /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
+		0271E0FC150E813F002FF28F /* limits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = limits.h; sourceTree = "<group>"; };
+		0271E0FD150E813F002FF28F /* mm3dnow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mm3dnow.h; sourceTree = "<group>"; };
+		0271E0FE150E813F002FF28F /* mm_malloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mm_malloc.h; sourceTree = "<group>"; };
+		0271E0FF150E813F002FF28F /* mmintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmintrin.h; sourceTree = "<group>"; };
+		0271E100150E813F002FF28F /* nmmintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nmmintrin.h; sourceTree = "<group>"; };
+		0271E101150E813F002FF28F /* pmmintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pmmintrin.h; sourceTree = "<group>"; };
+		0271E102150E813F002FF28F /* smmintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smmintrin.h; sourceTree = "<group>"; };
+		0271E103150E813F002FF28F /* stdalign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdalign.h; sourceTree = "<group>"; };
+		0271E104150E813F002FF28F /* stdarg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdarg.h; sourceTree = "<group>"; };
+		0271E105150E813F002FF28F /* stdbool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdbool.h; sourceTree = "<group>"; };
+		0271E106150E813F002FF28F /* stddef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stddef.h; sourceTree = "<group>"; };
+		0271E107150E813F002FF28F /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
+		0271E108150E813F002FF28F /* tgmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tgmath.h; sourceTree = "<group>"; };
+		0271E109150E813F002FF28F /* tmmintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmmintrin.h; sourceTree = "<group>"; };
+		0271E10A150E813F002FF28F /* varargs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = varargs.h; sourceTree = "<group>"; };
+		0271E10B150E813F002FF28F /* wmmintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wmmintrin.h; sourceTree = "<group>"; };
+		0271E10C150E813F002FF28F /* x86intrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x86intrin.h; sourceTree = "<group>"; };
+		0271E10D150E813F002FF28F /* xmmintrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmmintrin.h; sourceTree = "<group>"; };
+		0271E10F150E813F002FF28F /* rs_allocation.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_allocation.rsh; sourceTree = "<group>"; };
+		0271E110150E813F002FF28F /* rs_atomic.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_atomic.rsh; sourceTree = "<group>"; };
+		0271E111150E813F002FF28F /* rs_cl.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_cl.rsh; sourceTree = "<group>"; };
+		0271E112150E813F002FF28F /* rs_core.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_core.rsh; sourceTree = "<group>"; };
+		0271E113150E813F002FF28F /* rs_debug.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_debug.rsh; sourceTree = "<group>"; };
+		0271E114150E813F002FF28F /* rs_graphics.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_graphics.rsh; sourceTree = "<group>"; };
+		0271E115150E813F002FF28F /* rs_math.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_math.rsh; sourceTree = "<group>"; };
+		0271E116150E813F002FF28F /* rs_matrix.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_matrix.rsh; sourceTree = "<group>"; };
+		0271E117150E813F002FF28F /* rs_object.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_object.rsh; sourceTree = "<group>"; };
+		0271E118150E813F002FF28F /* rs_quaternion.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_quaternion.rsh; sourceTree = "<group>"; };
+		0271E119150E813F002FF28F /* rs_time.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_time.rsh; sourceTree = "<group>"; };
+		0271E11A150E813F002FF28F /* rs_types.rsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rs_types.rsh; sourceTree = "<group>"; };
+		0271E11B150E813F002FF28F /* source.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = source.properties; sourceTree = "<group>"; };
+		02A65BA2150F8223000535EE /* busybox */ = {isa = PBXFileReference; lastKnownFileType = file; name = busybox; path = ../busybox; sourceTree = "<group>"; };
+		02A65BA5150F822D000535EE /* su */ = {isa = PBXFileReference; lastKnownFileType = file; name = su; path = ../su; sourceTree = "<group>"; };
+		02A65BA6150F822D000535EE /* superuser.apk */ = {isa = PBXFileReference; lastKnownFileType = file; name = superuser.apk; path = ../superuser.apk; sourceTree = "<group>"; };
+		02A65BA7150F822D000535EE /* zergRush */ = {isa = PBXFileReference; lastKnownFileType = file; name = zergRush; path = ../zergRush; sourceTree = "<group>"; };
+		02EEAE71150F9C6600A2AA09 /* MainMenu2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu2.xib; sourceTree = "<group>"; };
+		02EEAE73150FBD4F00A2AA09 /* vividicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vividicon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0271E0A5150E7B79002FF28F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0221BE5F150EB51F0045E6C9 /* WebKit.framework in Frameworks */,
+				0271E0AD150E7B79002FF28F /* Cocoa.framework in Frameworks */,
+				0271E122150E813F002FF28F /* dx.jar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0271E0C5150E7B7A002FF28F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0271E0CB150E7B7A002FF28F /* SenTestingKit.framework in Frameworks */,
+				0271E0CC150E7B7A002FF28F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0271E09D150E7B79002FF28F = {
+			isa = PBXGroup;
+			children = (
+				02EEAE73150FBD4F00A2AA09 /* vividicon.png */,
+				0221BE5E150EB51E0045E6C9 /* WebKit.framework */,
+				0271E0B2150E7B79002FF28F /* VividTools */,
+				0271E0CF150E7B7A002FF28F /* VividToolsTests */,
+				0271E0AB150E7B79002FF28F /* Frameworks */,
+				0271E0A9150E7B79002FF28F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0271E0A9150E7B79002FF28F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0A8150E7B79002FF28F /* VividTools.app */,
+				0271E0C9150E7B7A002FF28F /* VividToolsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0271E0AB150E7B79002FF28F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0AC150E7B79002FF28F /* Cocoa.framework */,
+				0271E0CA150E7B7A002FF28F /* SenTestingKit.framework */,
+				0271E0AE150E7B79002FF28F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0271E0AE150E7B79002FF28F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0AF150E7B79002FF28F /* AppKit.framework */,
+				0271E0B0150E7B79002FF28F /* CoreData.framework */,
+				0271E0B1150E7B79002FF28F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0271E0B2150E7B79002FF28F /* VividTools */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0E6150E810A002FF28F /* SDK */,
+				0271E0BE150E7B79002FF28F /* AppDelegate.h */,
+				0271E0BF150E7B79002FF28F /* AppDelegate.m */,
+				0271E0B3150E7B79002FF28F /* Supporting Files */,
+				0271E0E3150E7DE2002FF28F /* Controller.h */,
+				0271E0E4150E7DE2002FF28F /* Controller.m */,
+				02EEAE71150F9C6600A2AA09 /* MainMenu2.xib */,
+			);
+			path = VividTools;
+			sourceTree = "<group>";
+		};
+		0271E0B3150E7B79002FF28F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0B4150E7B79002FF28F /* VividTools-Info.plist */,
+				0271E0B5150E7B79002FF28F /* InfoPlist.strings */,
+				0271E0B8150E7B79002FF28F /* main.m */,
+				0271E0BA150E7B79002FF28F /* VividTools-Prefix.pch */,
+				0271E0BB150E7B79002FF28F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0271E0CF150E7B7A002FF28F /* VividToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0D5150E7B7A002FF28F /* VividToolsTests.h */,
+				0271E0D6150E7B7A002FF28F /* VividToolsTests.m */,
+				0271E0D0150E7B7A002FF28F /* Supporting Files */,
+			);
+			path = VividToolsTests;
+			sourceTree = "<group>";
+		};
+		0271E0D0150E7B7A002FF28F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0D1150E7B7A002FF28F /* VividToolsTests-Info.plist */,
+				0271E0D2150E7B7A002FF28F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0271E0E6150E810A002FF28F /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0E7150E813F002FF28F /* platform-tools */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+		0271E0E7150E813F002FF28F /* platform-tools */ = {
+			isa = PBXGroup;
+			children = (
+				02A65BA5150F822D000535EE /* su */,
+				02A65BA6150F822D000535EE /* superuser.apk */,
+				02A65BA7150F822D000535EE /* zergRush */,
+				02A65BA2150F8223000535EE /* busybox */,
+				0271E0E8150E813F002FF28F /* aapt */,
+				0271E0E9150E813F002FF28F /* adb */,
+				0271E0EA150E813F002FF28F /* aidl */,
+				0271E0EB150E813F002FF28F /* dexdump */,
+				0271E0EC150E813F002FF28F /* dx */,
+				0271E0ED150E813F002FF28F /* fastboot */,
+				0271E0EE150E813F002FF28F /* lib */,
+				0271E0F0150E813F002FF28F /* llvm-rs-cc */,
+				0271E0F1150E813F002FF28F /* NOTICE.txt */,
+				0271E0F2150E813F002FF28F /* renderscript */,
+				0271E11B150E813F002FF28F /* source.properties */,
+			);
+			path = "platform-tools";
+			sourceTree = "<group>";
+		};
+		0271E0EE150E813F002FF28F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0EF150E813F002FF28F /* dx.jar */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		0271E0F2150E813F002FF28F /* renderscript */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0F3150E813F002FF28F /* clang-include */,
+				0271E10E150E813F002FF28F /* include */,
+			);
+			path = renderscript;
+			sourceTree = "<group>";
+		};
+		0271E0F3150E813F002FF28F /* clang-include */ = {
+			isa = PBXGroup;
+			children = (
+				0271E0F4150E813F002FF28F /* altivec.h */,
+				0271E0F5150E813F002FF28F /* avxintrin.h */,
+				0271E0F6150E813F002FF28F /* CMakeLists.txt */,
+				0271E0F7150E813F002FF28F /* emmintrin.h */,
+				0271E0F8150E813F002FF28F /* float.h */,
+				0271E0F9150E813F002FF28F /* immintrin.h */,
+				0271E0FA150E813F002FF28F /* iso646.h */,
+				0271E0FB150E813F002FF28F /* LICENSE.TXT */,
+				0271E0FC150E813F002FF28F /* limits.h */,
+				0271E0FD150E813F002FF28F /* mm3dnow.h */,
+				0271E0FE150E813F002FF28F /* mm_malloc.h */,
+				0271E0FF150E813F002FF28F /* mmintrin.h */,
+				0271E100150E813F002FF28F /* nmmintrin.h */,
+				0271E101150E813F002FF28F /* pmmintrin.h */,
+				0271E102150E813F002FF28F /* smmintrin.h */,
+				0271E103150E813F002FF28F /* stdalign.h */,
+				0271E104150E813F002FF28F /* stdarg.h */,
+				0271E105150E813F002FF28F /* stdbool.h */,
+				0271E106150E813F002FF28F /* stddef.h */,
+				0271E107150E813F002FF28F /* stdint.h */,
+				0271E108150E813F002FF28F /* tgmath.h */,
+				0271E109150E813F002FF28F /* tmmintrin.h */,
+				0271E10A150E813F002FF28F /* varargs.h */,
+				0271E10B150E813F002FF28F /* wmmintrin.h */,
+				0271E10C150E813F002FF28F /* x86intrin.h */,
+				0271E10D150E813F002FF28F /* xmmintrin.h */,
+			);
+			path = "clang-include";
+			sourceTree = "<group>";
+		};
+		0271E10E150E813F002FF28F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0271E10F150E813F002FF28F /* rs_allocation.rsh */,
+				0271E110150E813F002FF28F /* rs_atomic.rsh */,
+				0271E111150E813F002FF28F /* rs_cl.rsh */,
+				0271E112150E813F002FF28F /* rs_core.rsh */,
+				0271E113150E813F002FF28F /* rs_debug.rsh */,
+				0271E114150E813F002FF28F /* rs_graphics.rsh */,
+				0271E115150E813F002FF28F /* rs_math.rsh */,
+				0271E116150E813F002FF28F /* rs_matrix.rsh */,
+				0271E117150E813F002FF28F /* rs_object.rsh */,
+				0271E118150E813F002FF28F /* rs_quaternion.rsh */,
+				0271E119150E813F002FF28F /* rs_time.rsh */,
+				0271E11A150E813F002FF28F /* rs_types.rsh */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0271E0A7150E7B79002FF28F /* VividTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0271E0DA150E7B7A002FF28F /* Build configuration list for PBXNativeTarget "VividTools" */;
+			buildPhases = (
+				0271E0A4150E7B79002FF28F /* Sources */,
+				0271E0A5150E7B79002FF28F /* Frameworks */,
+				0271E0A6150E7B79002FF28F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VividTools;
+			productName = VividTools;
+			productReference = 0271E0A8150E7B79002FF28F /* VividTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0271E0C8150E7B7A002FF28F /* VividToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0271E0DD150E7B7A002FF28F /* Build configuration list for PBXNativeTarget "VividToolsTests" */;
+			buildPhases = (
+				0271E0C4150E7B7A002FF28F /* Sources */,
+				0271E0C5150E7B7A002FF28F /* Frameworks */,
+				0271E0C6150E7B7A002FF28F /* Resources */,
+				0271E0C7150E7B7A002FF28F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0271E0CE150E7B7A002FF28F /* PBXTargetDependency */,
+			);
+			name = VividToolsTests;
+			productName = VividToolsTests;
+			productReference = 0271E0C9150E7B7A002FF28F /* VividToolsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0271E09F150E7B79002FF28F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 0271E0A2150E7B79002FF28F /* Build configuration list for PBXProject "VividTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0271E09D150E7B79002FF28F;
+			productRefGroup = 0271E0A9150E7B79002FF28F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0271E0A7150E7B79002FF28F /* VividTools */,
+				0271E0C8150E7B7A002FF28F /* VividToolsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0271E0A6150E7B79002FF28F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0271E0B7150E7B79002FF28F /* InfoPlist.strings in Resources */,
+				0271E0BD150E7B79002FF28F /* Credits.rtf in Resources */,
+				0271E11C150E813F002FF28F /* aapt in Resources */,
+				0271E11D150E813F002FF28F /* adb in Resources */,
+				0271E11E150E813F002FF28F /* aidl in Resources */,
+				0271E11F150E813F002FF28F /* dexdump in Resources */,
+				0271E120150E813F002FF28F /* dx in Resources */,
+				0271E121150E813F002FF28F /* fastboot in Resources */,
+				0271E123150E813F002FF28F /* llvm-rs-cc in Resources */,
+				0271E124150E813F002FF28F /* NOTICE.txt in Resources */,
+				0271E125150E813F002FF28F /* CMakeLists.txt in Resources */,
+				0271E126150E813F002FF28F /* LICENSE.TXT in Resources */,
+				0271E127150E813F002FF28F /* rs_allocation.rsh in Resources */,
+				0271E128150E813F002FF28F /* rs_atomic.rsh in Resources */,
+				0271E129150E813F002FF28F /* rs_cl.rsh in Resources */,
+				0271E12A150E813F002FF28F /* rs_core.rsh in Resources */,
+				0271E12B150E813F002FF28F /* rs_debug.rsh in Resources */,
+				0271E12C150E813F002FF28F /* rs_graphics.rsh in Resources */,
+				0271E12D150E813F002FF28F /* rs_math.rsh in Resources */,
+				0271E12E150E813F002FF28F /* rs_matrix.rsh in Resources */,
+				0271E12F150E813F002FF28F /* rs_object.rsh in Resources */,
+				0271E130150E813F002FF28F /* rs_quaternion.rsh in Resources */,
+				0271E131150E813F002FF28F /* rs_time.rsh in Resources */,
+				0271E132150E813F002FF28F /* rs_types.rsh in Resources */,
+				0271E133150E813F002FF28F /* source.properties in Resources */,
+				02A65BA3150F8223000535EE /* busybox in Resources */,
+				02A65BA8150F822D000535EE /* su in Resources */,
+				02A65BA9150F822D000535EE /* superuser.apk in Resources */,
+				02A65BAA150F822D000535EE /* zergRush in Resources */,
+				02EEAE72150F9C6600A2AA09 /* MainMenu2.xib in Resources */,
+				02EEAE74150FBD4F00A2AA09 /* vividicon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0271E0C6150E7B7A002FF28F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0271E0D4150E7B7A002FF28F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0271E0C7150E7B7A002FF28F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0271E0A4150E7B79002FF28F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0271E0B9150E7B79002FF28F /* main.m in Sources */,
+				0271E0C0150E7B79002FF28F /* AppDelegate.m in Sources */,
+				0271E0E5150E7DE2002FF28F /* Controller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0271E0C4150E7B7A002FF28F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0271E0D7150E7B7A002FF28F /* VividToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0271E0CE150E7B7A002FF28F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0271E0A7150E7B79002FF28F /* VividTools */;
+			targetProxy = 0271E0CD150E7B7A002FF28F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0271E0B5150E7B79002FF28F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0271E0B6150E7B79002FF28F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0271E0BB150E7B79002FF28F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0271E0BC150E7B79002FF28F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0271E0D2150E7B7A002FF28F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0271E0D3150E7B7A002FF28F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0271E0D8150E7B7A002FF28F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		0271E0D9150E7B7A002FF28F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		0271E0DB150E7B7A002FF28F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VividTools/VividTools-Prefix.pch";
+				INFOPLIST_FILE = "VividTools/VividTools-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0271E0DC150E7B7A002FF28F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VividTools/VividTools-Prefix.pch";
+				INFOPLIST_FILE = "VividTools/VividTools-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0271E0DE150E7B7A002FF28F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VividTools.app/Contents/MacOS/VividTools";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VividTools/VividTools-Prefix.pch";
+				INFOPLIST_FILE = "VividToolsTests/VividToolsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0271E0DF150E7B7A002FF28F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VividTools.app/Contents/MacOS/VividTools";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VividTools/VividTools-Prefix.pch";
+				INFOPLIST_FILE = "VividToolsTests/VividToolsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0271E0A2150E7B79002FF28F /* Build configuration list for PBXProject "VividTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0271E0D8150E7B7A002FF28F /* Debug */,
+				0271E0D9150E7B7A002FF28F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0271E0DA150E7B7A002FF28F /* Build configuration list for PBXNativeTarget "VividTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0271E0DB150E7B7A002FF28F /* Debug */,
+				0271E0DC150E7B7A002FF28F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0271E0DD150E7B7A002FF28F /* Build configuration list for PBXNativeTarget "VividToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0271E0DE150E7B7A002FF28F /* Debug */,
+				0271E0DF150E7B7A002FF28F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0271E09F150E7B79002FF28F /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'VividTools' target in the 'VividTools' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
